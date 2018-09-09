@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuScreen">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="332dp"
+        android:layout_height="45dp"
+        android:layout_weight="1"
+        android:fontFamily="serif"
+        android:text="Unit Calculator"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="137dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="341dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:text="What do you want to convert?"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        tools:layout_editor_absoluteX="27dp" />
+
+    <LinearLayout
+        android:layout_width="384dp"
+        android:layout_height="110dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="251dp">
+
+        <Button
+            android:id="@+id/LengthButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onLengthClicked"
+            android:text="Length" />
+
+        <Button
+            android:id="@+id/WeightButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onLengthClicked"
+            android:text="Weight" />
+
+        <Button
+            android:id="@+id/TemperatureButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onLengthClicked"
+            android:text="Temperature" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/Credits"
+        android:layout_width="309dp"
+        android:layout_height="42dp"
+        android:layout_weight="1"
+        android:text="Created by: Dylan Alvarez"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="423dp" />
+
+    <TextView
+        android:id="@+id/Credits2"
+        android:layout_width="368dp"
+        android:layout_weight="1"
+        android:text="Logo by: https://www.onlinewebfonts.com/icon/467513"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="465dp" />
+
+</android.support.constraint.ConstraintLayout>

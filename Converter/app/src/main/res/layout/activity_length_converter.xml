@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LengthConverter">
+
+    <EditText
+        android:id="@+id/inputText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:layout_editor_absoluteX="84dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:text="Enter the Number you want to convert below:"
+        tools:layout_editor_absoluteX="52dp"
+        tools:layout_editor_absoluteY="121dp" />
+
+    <Switch
+        android:id="@+id/convertSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:text="Celsius  "
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <EditText
+        android:id="@+id/solution"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        tools:layout_editor_absoluteX="105dp"
+        tools:layout_editor_absoluteY="378dp" />
+
+    <TextView
+        android:id="@+id/results"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Results: "
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="52dp"
+        tools:layout_editor_absoluteY="378dp" />
+
+    <Button
+        android:id="@+id/convertButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="onConvertButton"
+        android:text="Convert"
+        app:layout_constraintTop_toBottomOf="@+id/inputText"
+        tools:layout_editor_absoluteX="208dp" />
+
+    <TextView
+        android:id="@+id/inputUnit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="°C"
+        android:textSize="28sp"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:layout_editor_absoluteX="304dp" />
+
+    <TextView
+        android:id="@+id/solutionUnit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="°F"
+        android:textSize="28sp"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="320dp"
+        tools:layout_editor_absoluteY="386dp" />
+</android.support.constraint.ConstraintLayout>
