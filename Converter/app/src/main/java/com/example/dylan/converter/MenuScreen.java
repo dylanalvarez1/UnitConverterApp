@@ -13,6 +13,7 @@ public class MenuScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_screen);
     }
+
     public void onLengthClicked(View view) {
         Intent i = new Intent(getBaseContext(), LengthConverter.class);
         startActivity(i);
